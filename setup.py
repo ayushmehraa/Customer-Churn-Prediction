@@ -9,7 +9,7 @@ def get_requirements(file_path: str) -> List[str]:
 
         if "-e ." in requirements:
             requirements.remove("-e .")
-            
+            # update the requirements to include the local package
     return requirements
 
 setup(
